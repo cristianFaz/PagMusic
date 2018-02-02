@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Pagina de Musica </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header>
+          <nav>
+            <div class="menu-icon">
+              <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+              FALZZAR
+            </div>
+            <div class="menu">
+              <ul>
+                <li><a href="#">Home</li>
+                <li><a href="#">About</li>
+                <li><a href="#">Music</li>
+                <li><a href="#">Contact</li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+    </div>
+    <script type="text/javascript">
+
+        //Menu toggle-button
+
+        $(document).ready(function(){
+          $(".menu-icon").on("click",function(){
+            $("nav ul").toggleClass("showing");
+          });
+        });
+
+        //Scrolling Effect
+
+        $(window).on("scroll",function(){
+          if($(window).scrollTop()) {
+            $('nav').addClass('black');
+          }
+          else {
+            $('nav').removeClass('black');
+          }
+        })
+    </script>
+    <div class="parallax" id="particles-js">
+        <a class="boton_personalizado" href="https://vinkula.com">Soy un bot&oacuten</a>
+        <a class="boton_personalizado1" href="https://vinkula.com">Soy un bot&oacuten</a>
+    </div>
+
+    <div class="Info">
+      En esta parte iia el texto  aqui tendriamos que poner una pare de notiicia  o poner una lista de
+      canciones asi como informacion de la pagina para que se vea mucho mas interesante entonces podriamos
+      inventar algo mas tambien ver la manera de poner una barra diferente.
+
+    </div>
+
+    <div class="parallax1" id="particles-js">
+
+    </div>
+
+    <script src="particles.js"> </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
