@@ -1,10 +1,11 @@
 .Menu{
     height: 50px;
 }
-h1{
+div h1{
     color: white;
     font-style: italic;
     position: absolute fixed;
+    margin-bottom: 50px;
 }
 .parallax {
     background-image: url("../img/5661939-music-wallpaper-hd.jpg")   ;
@@ -25,26 +26,21 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.TxtCreador{
-    color: white;
-    margin: 0;
-    padding: 0;
-}
 .Marco{
-    background-image: url('../img/marco-redondo.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100px;
-    width: 100px;
-    
-    display: block;
-    }
-.Marco2{
-    background-image: url('../img/marco-redondo.png');
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    margin-right: 80%
+    width: 100%;
+}
+.TextAutores{
+    color: white;
+    display: block;
+    margin-top: 15px;
+}
+.TextAutores2{
+    color: white;
+    display: block;
+    margin-top: 15px;
+    text-align: right;
 }
 div.Banner{
     background-image: url("../img/BannerFiesta.jpg");
