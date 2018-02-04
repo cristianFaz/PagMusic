@@ -1,5 +1,9 @@
-.Menu{
-    height: 50px;
+.MenuSalto{
+    padding-bottom: 60px;
+    background-color: black;
+}
+body{
+	background-color: black;
 }
 div h1{
     color: white;
@@ -65,3 +69,21 @@ img{
 	margin: auto;
 	width: 50%;
 }
+
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .Marco{
+        width: 50%;        
+	}
+    .TextAutores{
+        background-image: url('../img/backTexto.jpg');
+        text-align: center;
+        opacity: .8;
+    }
+}
+
+
