@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        
+        <style>
+            #playlist{
+                list-style: none;
+            }
+            #playlist li a{
+                color: black;
+                text-decoration: none;
+            }
+            #playlist .current-song a{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <audio src="" controls id="audioPlayer">No funciona en este navegador</audio>
+        <ul id="playlist">
+            <li class="current-song"><a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a></li>
+            <li><a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a></li>
+            <li><a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+        </ul>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/audioPlayer.js"></script>
+        <script>
+            audioPlayer();
+        </script>
+    </body>
+</html>
