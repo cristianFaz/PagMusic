@@ -1,33 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        
-        <style>
-            #playlist{
-                list-style: none;
-            }
-            #playlist li a{
-                color: black;
-                text-decoration: none;
-            }
-            #playlist .current-song a{
-                color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <audio src="" controls id="audioPlayer">No funciona en este navegador</audio>
-        <ul id="playlist">
-            <li class="current-song"><a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a></li>
-            <li><a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a></li>
-            <li><a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
-        </ul>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/audioPlayer.js"></script>
-        <script>
-            audioPlayer();
-        </script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/player.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #F2F2F2">
+    <div class="col-xs-12">Menu</div>
+
+    <audio src="" controls id="audioPlayer">No funciona en este navegador</audio>
+
+    <div class="Cont_Carousel col-xs-12">
+        <div class="carousel slide" id="myCarousel" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/car-imagen1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/car-imagen2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/car-imagen3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/car-imagen4.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-12 Cont_Albums_General">
+        <div class="Cont_Margen">
+            <span class="col-xs-12 txt-genero">Kpop</span>
+
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img1">
+                </div>
+
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img2">
+                </div>
+
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img3">
+                </div>
+
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img4">
+                </div>
+
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 Cont_Albums_General">
+        <div class="Cont_Margen">
+            <span class="col-xs-12 txt-genero">Reggaeton</span>
+
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img5"></div>
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img6">
+                </div>
+
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img7">
+                </div>
+
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-3 Cont_Canciones">
+                <div class="Cont_Albums-portada" id="portada-img8">
+                </div>
+
+                <div class="Cont_Albums-canciones">
+                    <ul id="playlist">
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Clock%20Strikes%20(setbeat.com).mp3">One Ok Rock Clock Strikes</a>
+                            <span>New</span>
+                        </li>
+                        <li>
+                            <a href="music/One%20Ok%20Rock%20-%20Listen%20(setbeat.com).mp3">One Ok Rock Listen</a>
+                        </li>
+                        <li>
+                            <a href="music/RADWIMPS%20-%20Zenzenzense%20-%20Movie%20Version%20(setbeat.com).mp3">RADWIMPS Zenzenzen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/audioPlayer.js"></script>
+    <script>
+        audioPlayer();
+    </script>
+
+</body>
+
 </html>

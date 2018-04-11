@@ -1,5 +1,5 @@
 .MenuSalto{
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     background-color: black;
 }
 body{
@@ -11,8 +11,19 @@ div h1{
     position: absolute fixed;
     margin-bottom: 50px;
 }
+.navInformacion{
+    position: fixed;
+    padding-left: 95%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.navInformacion img{
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+}
 .parallax {
-    background-image: url("../img/5661939-music-wallpaper-hd.jpg")   ;
+    background-image: url("../img/5661939-music-wallpaper-hd.jpg");
 
     height: 100%;
 
