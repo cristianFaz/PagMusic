@@ -9,13 +9,16 @@ font-family: Berlin Sans FB;
 div {
      cursor:url(arrow.cur), auto;
 }
+header{
 
+}
 .content{
   width: 90%;
   margin: 4em auto;
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
+
 }
 
 .logo{
@@ -29,6 +32,7 @@ div {
 nav{
   position: fixed;
   width: 100%;
+ z-index: 1000;
 }
 
 nav ul{
@@ -165,7 +169,9 @@ nav ul li a{
 }
 .Info {
   height:1000px;
-  background-color:#F2F2F2;
+  background-image: url('girlaud.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size:22px
 }
 ul.horizontal{
