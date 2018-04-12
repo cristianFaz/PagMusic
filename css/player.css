@@ -1,3 +1,9 @@
+body{
+    /*background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: contain;
+    background-color: dimgrey;*/
+}
 #audioPlayer {
     background-color: black;
     width: 100%;
@@ -14,6 +20,14 @@
     margin-right: auto;
 }
 
+.carousel-caption h3{
+    font-size: 30px;
+}
+
+.carousel-caption p{
+    font-size: 22px;
+}
+
 .carousel-inner {
     width: 100%;
     max-height: 350px;
@@ -25,21 +39,22 @@
 }
 
 .Cont_Albums_General {
-    padding-top: 4%;
+    padding-top: 3%;
 }
 
 .Cont_Margen {
     background-image: url(../img/elegant-grey-illumination-background-presentations-powerpoint-backgrounds.jpg);
-    background-repeat: no-repeat;
-    height: 370px;
+    background-repeat:repeat-x;
+    background-size: contain;
+    height: 390px;
     margin-left: 3%;
     margin-right: 3%;
-    padding-bottom: 30px;
 }
 
 .txt-genero {
     padding: 10px;
     font-weight: 700;
+    font-size: 16px;
     color: white;
     background-color: black
 }
@@ -55,38 +70,55 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    margin-top: 15px;
 }
 
 #portada-img1 {
     background-image: url('../img/Album/img_album1.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
 }
-
 #portada-img2 {
     background-image: url('../img/Album/img_album2.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
 }
-
 #portada-img3 {
     background-image: url('../img/Album/img_album3.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
 }
-
 #portada-img4 {
     background-image: url('../img/Album/img_album4.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
 }
-
 #portada-img5 {
     background-image: url('../img/Album/img_album5.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
 }
-
 #portada-img6 {
     background-image: url('../img/Album/img_album6.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
 }
-
 #portada-img7 {
     background-image: url('../img/Album/img_album7.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
 }
-
 #portada-img8 {
     background-image: url('../img/Album/img_album8.jpg');
+    overflow: hidden;
+    transition: ease-in-out .2s;
+}
+
+#portada-img1:hover, #portada-img2:hover, #portada-img3:hover,
+#portada-img4:hover, #portada-img5:hover, #portada-img6:hover,
+#portada-img7:hover, #portada-img8:hover{
+    transform: scale(1.1);
+    transition: ease-in-out .1s;
 }
 
 .Cont_Albums-canciones {
